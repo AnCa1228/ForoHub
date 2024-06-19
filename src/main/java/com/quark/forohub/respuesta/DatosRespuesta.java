@@ -1,5 +1,7 @@
 package com.quark.forohub.respuesta;
 
+import com.quark.forohub.usuario.Usuario;
+
 import java.util.Date;
 
 public record DatosRespuesta(
@@ -7,7 +9,7 @@ public record DatosRespuesta(
         String mensaje,
         String topico,
         Date fechaCreacion,
-        String autor,
+        Usuario usuario,
         String solucion
 ) {
 }

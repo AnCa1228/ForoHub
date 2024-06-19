@@ -1,5 +1,9 @@
 package com.quark.forohub.topico;
 
+import com.quark.forohub.curso.Curso;
+import com.quark.forohub.respuesta.Respuesta;
+import com.quark.forohub.usuario.Usuario;
+
 import java.util.Date;
 
 public class Topico {
@@ -8,7 +12,7 @@ public class Topico {
     private String mensaje;
     private Date fechaCreacion;
     private String status;
-    private String autor;
-    private String curso;
-    String respuestas;
+    private Usuario usuario;
+    private Curso curso;
+    private Respuesta respuestas;
 }

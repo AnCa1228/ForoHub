@@ -1,5 +1,9 @@
 package com.quark.forohub.topico;
 
+import com.quark.forohub.curso.Curso;
+import com.quark.forohub.respuesta.Respuesta;
+import com.quark.forohub.usuario.Usuario;
+
 import java.util.Date;
 
 public record DatosRegistroTopico(
@@ -8,8 +12,8 @@ public record DatosRegistroTopico(
         String mensaje,
         Date fechaCreacion,
         String status,
-        String autor,
-        String curso,
-        String respuestas
+        Usuario usuario,
+        Curso curso,
+        Respuesta respuestas
 ) {
 }
