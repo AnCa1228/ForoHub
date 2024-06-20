@@ -1,12 +1,12 @@
 package com.quark.forohub.usuario;
 
-import com.quark.forohub.perfil.Perfil;
+import com.quark.forohub.perfil.DatosPerfil;
 
 public record DatosUsuario(
         Long id,
         String nombre,
         String email,
         String password,
-        Perfil perfiles
+        DatosPerfil perfiles
 ) {
 }
